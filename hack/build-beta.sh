@@ -20,4 +20,4 @@ git add **/action.yml || true
 git commit -m "Use beta version" --allow-empty
 
 # Push
-git push -u origin beta:beta
+git push -u origin beta:beta --force
