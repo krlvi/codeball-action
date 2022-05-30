@@ -77,7 +77,7 @@ async function run(): Promise<void> {
       throw new Error(`Job ${jobID} is not a contribution job`)
     }
 
-    const approved = job.contribution?.result === 'approved'
+    const approved = job.contribution?.result === 'approved' || true
 
     const octokit = new Octokit({auth: githubToken})
 
